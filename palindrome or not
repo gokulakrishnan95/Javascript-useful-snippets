@@ -1,0 +1,17 @@
+//the below snippet is case sensitive
+//if you want it to be case insensitive , use "string.toLowerCase()" method
+var x = "MOM";
+var y = "";
+//reversing the string using for loop
+for (var i=(x.length - 1);i>=0;i--){
+   y = y + x[i];
+   if(i == 0){
+   //comparing the reversed string with the given string
+  if (x == y){
+  console.log("the given string is an palindrome")
+  }
+  else{
+    console.log("the given string is not an palindrome")
+  }
+   }
+}
