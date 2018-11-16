@@ -1,0 +1,16 @@
+//removing duplicates from an array
+
+var x = [1,2,3,4,5,5,6,6,6];
+var y = [];
+for(var i =0;i<x.length;i++){
+
+//array.indexOf(val)<0 returns false when val is present in the array
+if(y.indexOf(x[i]) < 0){
+y.push(x[i]);
+}
+}
+console.log(y);
+
+//its a pure javascript method along with inbuilt method.
+//if you donot want use inbuilt method you have to run one more for loop for array y and we have to check whether the value is present or not
+//in ES6 there is a method called [...new Set(Array)] also removes duplicates
