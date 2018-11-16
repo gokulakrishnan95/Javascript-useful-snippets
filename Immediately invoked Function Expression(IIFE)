@@ -1,0 +1,14 @@
+//IIFE which stands for Immediately invoked Function Expression
+
+//traditional function calling
+function f1(){
+//logic comes here
+}
+f1();// we are calling the function here
+
+//here comes with IIFE
++function f2 (){
+//logic comes here
+}();//we are calling the function here
+
+//'+' or any unary operator prefixed with function keyword converts function into function expression and we are calling the function at the end of function itself
