@@ -1,0 +1,29 @@
+function qSort(arr){
+//checking the array length 
+if(arr.length==0){
+return [];
+}
+
+//creating two empty arrays 
+var left = [];
+var right = [];
+var pivot = arr[0];
+for(var i = 1; i<arr.length;i++){
+if(arr[i] < pivot){
+
+left.push(arr[i]);
+}
+else{
+right.push(arr[i]);
+}
+}
+console.log("left",left);
+console.log("pivot",pivot);
+console.log("right",right);
+
+return qSort(left).concat(pivot,qSort(right));
+
+}
+
+var a  = [10,50,90,1,558,2];
+qSort(a)
